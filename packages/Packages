@@ -44,6 +44,25 @@ USE: abi_x86_64 amd64 closure-compile cups elibc_glibc hangouts kernel_linux l10
 MTIME: 1587221996
 REPO: gentoo
 
+BDEPEND: || ( dev-lang/python:3.7[threads(+)] dev-lang/python:3.6[threads(+)] )
+BUILD_TIME: 1584986734
+CPV: net-libs/nodejs-12.16.1
+DEFINED_PHASES: compile configure install postinst prepare pretend setup test
+DEPEND: >=dev-libs/libuv-1.34.0:0/1= >=net-dns/c-ares-1.15.0 >=net-libs/http-parser-2.9.3:0/2.9.0= >=net-libs/nghttp2-1.40.0 sys-libs/zlib >=dev-libs/icu-64>
+EAPI: 7
+IUSE: cpu_flags_x86_sse2 debug doc icu inspector +npm +snapshot +ssl +system-ssl systemtap test
+KEYWORDS: amd64 ~arm arm64 ~ppc ~ppc64 x86 ~amd64-linux ~x64-macos
+LICENSE: Apache-1.1 Apache-2.0 BSD BSD-2 MIT
+MD5: 4ced3d97dc75b395431eaa38f307b807
+RDEPEND: >=dev-libs/libuv-1.34.0:0/1= >=net-dns/c-ares-1.15.0 >=net-libs/http-parser-2.9.3:0/2.9.0= >=net-libs/nghttp2-1.40.0 sys-libs/zlib >=dev-libs/icu-6>
+REQUIRES: x86_64: libc.so.6 libcares.so.2 libcrypto.so.1.1 libdl.so.2 libhttp_parser.so.2.9 libicui18n.so.65 libicuuc.so.65 libm.so.6 libnghttp2.so.14 libpt>
+RESTRICT: test
+SHA1: 0075c859f9ee499eabdf302acdccbbc1e9c5840d
+SIZE: 11873275
+USE: abi_x86_64 amd64 cpu_flags_x86_sse2 elibc_glibc icu inspector kernel_linux npm snapshot ssl system-ssl userland_GNU
+MTIME: 1587229995
+REPO: gentoo
+
 BDEPEND: dev-util/ninja dev-util/cmake
 BUILD_TIME: 1587212419
 CPV: media-video/simplescreenrecorder-0.3.11-r2
